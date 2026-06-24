@@ -1,0 +1,279 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  background-color: #333; /* Dark gray background color */
+  padding: 10px 20px;
+  display: flex;              /* Flexbox for logo + links */
+  align-items: center;        /* Vertically center items */
+  justify-content: space-between; /* Space between logo and links */
+}
+
+/* Logo styling */
+nav .logo img {
+  height: 50px;               /* Resize logo height */
+  width: auto;                /* Keep aspect ratio */
+}
+
+/* Navbar list */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Navbar items */
+nav ul li {
+  margin: 5px 15px;
+}
+
+/* Navbar links */
+nav ul li a {
+  text-decoration: none;
+  color: white; /* Link text color */
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect on links */
+nav ul li a:hover {
+  background-color: #0ab5f8; /* Darker gray background on hover */
+  border-radius: 4px;     /* Rounded corners when hovered */
+}
+
+/* Responsive: stack items on small screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;   /* Stack logo and links */
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Custom paragraph style */
+.p {
+  color: rgb(10, 130, 199); /* Blue text color */
+  font-weight: bold;        /* Bold text */
+}
+
+
+/* body here  */
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f9f4; /* Light green background */
+}
+.hero h1 {
+  color: #0a821f; /* Green heading */
+}
+.hero p {
+  color: #e60e0e; /* Gray subtext */
+}
+.hero img {
+  width: 100%; /* Responsive image */
+  height: 100%;
+  margin-top: 20px;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.category {
+  background-color: #e0f7e9; /* Soft green box */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 200px; /* Responsive sizing */
+  max-width: 250px;
+  font-weight: bold;
+}
+
+/* Sale Section */
+.sale {
+  background-color: #ffe0e0; /* Light red background */
+  text-align: center;
+  padding: 30px 20px;
+  color: #b30000; /* Dark red text */
+  font-weight: bold;
+}
+
+/* Introduction Section */
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Neutral background */
+}
+.intro h2 {
+  color: #0a821f; /* Green heading */
+}
+.intro p {
+  max-width: 600px;
+  margin: auto;
+  color: #333;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+.review-container {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll */
+  gap: 20px;
+  padding: 10px;
+}
+.review {
+  min-width: 250px;
+  background-color: #e6ffe6; /* Light green box */
+  padding: 15px;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* about page  */
+/* Hover effect for all cards */
+.card:hover {
+  transform: scale(1.03);        /* Slight zoom */
+  transition: 0.3s;              /* Smooth animation */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Shadow on hover */
+}
+
+/* Team member images */
+.card img {
+  max-height: 200px;             /* Limit image height */
+  object-fit: cover;             /* Keep proportions */
+}
+
+
+/* Product Cards */
+ 
+.product-card:hover {
+  transform: scale(1.03);        /* Slight zoom */
+  transition: 0.3s;              /* Smooth animation */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Shadow on hover */
+}
+
+/* Wishlist button hover */
+.product-card button:hover {
+  background-color: #198754;     /* Bootstrap green */
+  color: white;
+}
+
+/* Blog Cards */
+ 
+.blog-card:hover {
+  transform: scale(1.03);        /* Slight zoom */
+  transition: 0.3s;              /* Smooth animation */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Shadow on hover */
+}
+
+/* Card images */
+.blog-card img {
+  height: 200px;                 /* Fixed height */
+  object-fit: cover;             /* Crop nicely */
+}
+
+
+/*  service cards */
+
+
+.service-card:hover {
+  transform: scale(1.03);        /* Slight zoom */
+  transition: 0.3s;              /* Smooth animation */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Shadow on hover */
+}
+
+/* Service card images */
+.service-card img {
+  height: 200px;                 /* Fixed image height */
+  object-fit: cover;             /* Crop nicely */
+}
+
+/* Hover effect for contact cards */
+
+.contact-card:hover {
+  transform: scale(1.03);        /* Slight zoom */
+  transition: 0.3s;              /* Smooth animation */
+  box-shadow: 0 4px 12px rgba(7, 147, 228, 0.2); /* Shadow on hover */
+}
+
+/* services */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fff5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #2e7d32;
+  font-size: 2.5rem;
+}
+
+/* Service Sections */
+.service {
+  background: #ffffff;
+  border: 2px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.02);
+  background-color: #e8f5e9;
+}
+
+.service h2 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
